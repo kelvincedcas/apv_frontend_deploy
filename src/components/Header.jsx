@@ -8,8 +8,8 @@ const Header = () => {
 
     const [profileMenuFlag, setProfileMenuFlag] = useState(false);
     const [navbarFlag, setNavbarFlag] = useState(true);
-    const [tooltipMenuFlag, setTooltipMenuFlag] = useState(false);
-    const [tooltipFlag, setTooltipFlag] = useState(false);
+    // const [tooltipMenuFlag, setTooltipMenuFlag] = useState(false);
+    // const [tooltipFlag, setTooltipFlag] = useState(false);
 
     const path = window.location.pathname;
 
@@ -26,16 +26,16 @@ const Header = () => {
                     <button 
                         className="p-2 border-1 border-neutral-200 rounded-lg hover:cursor-pointer hover:bg-neutral-100 duration-200 ease-in"
                         onClick={() => {setNavbarFlag(!navbarFlag)}}
-                        onMouseEnter={() => {setTooltipMenuFlag(true)}}
-                        onMouseLeave={() => {setTooltipMenuFlag(false)}}
+                        // onMouseEnter={() => {setTooltipMenuFlag(true)}}
+                        // onMouseLeave={() => {setTooltipMenuFlag(false)}}
                     >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                     </button>
-                    <div>
+                    {/* <div>
                         <span className={`${tooltipMenuFlag && 'visible'} text-sm border-1 mt-1 ml-1 invisible  border-neutral-200 bg-primary py-1 px-2 rounded-md absolute text-neutral-600 `}>Abrir menú</span>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="relative">
@@ -72,16 +72,16 @@ const Header = () => {
                                 <button
                                 className="p-2 border-1 border-neutral-200 rounded-lg hover:cursor-pointer hover:bg-neutral-100 duration-200 ease-in md:hidden"
                                 onClick={() => {setNavbarFlag(!navbarFlag)}}
-                                onMouseEnter={() => {setTooltipFlag(true)}}
-                                onMouseLeave={() => {setTooltipFlag(false)}}
+                                // onMouseEnter={() => {setTooltipFlag(true)}}
+                                // onMouseLeave={() => {setTooltipFlag(false)}}
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                                     </svg>
                                 </button>
-                                <div className="absolute w-35">
+                                {/* <div className="absolute w-35">
                                     <span className={`${tooltipFlag && 'visible'} text-sm border-1 border-neutral-200 bg-primary py-1 px-2 rounded-md absolute text-neutral-600 mt-1 ml-10 invisible`}>Cerrar menú</span>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <Link 
