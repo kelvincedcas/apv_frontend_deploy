@@ -1,4 +1,5 @@
 import {useState, createContext, useEffect} from 'react';
+import useAuth from '../hooks/useAuth';
 import clienteAxios from '../config/axios';
 
 const PacienteContext = createContext();
@@ -12,6 +13,8 @@ const PacienteProvider = ({children}) => {
     const [spinnerFlagLoading, setSpinnerFlagLoading] = useState(true);
     const [alertaProvider, setAlertaProvider] = useState({});
     const [modalDeleteFlag, setModalDeleteFlag] = useState(false);
+
+    const {auth} = useAuth();
 
     useEffect(() => {
         const obtenerPacientes = async () => {
@@ -37,7 +40,7 @@ const PacienteProvider = ({children}) => {
             setFinalizado(true);
         }
         obtenerPacientes();
-    }, [])
+    }, [auth])
 
     const setEdicion = (paciente) => {
         setPaciente(paciente);
