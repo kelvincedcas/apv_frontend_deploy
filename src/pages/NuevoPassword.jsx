@@ -205,7 +205,7 @@ const NuevoPassword = () => {
                                     setPasswordValidationFlag(false);
                                 }}
                             />
-                            <div className="absolute hover:bg-neutral-200 cursor-pointer p-1 rounded-lg duration-200 ease-in mt-10 ml-60 sm:ml-92" 
+                            <div className="absolute hover:bg-neutral-200 cursor-pointer p-1 rounded-lg duration-200 ease-in mt-10 ml-61 sm:ml-92" 
                             onClick={() => {
                                 setShowPassword(!showPassword);
                                 }}>
@@ -303,7 +303,7 @@ const NuevoPassword = () => {
                                     handleChangeConfirmPassword(e.target.value);
                                 }}
                             />
-                            <div className="absolute hover:bg-neutral-200 cursor-pointer p-1 rounded-lg duration-200 ease-in mt-10 ml-60 sm:ml-92" onClick={() => {setShowConfirmPassword(!showConfirmPassword)}}>
+                            <div className="absolute hover:bg-neutral-200 cursor-pointer p-1 rounded-lg duration-200 ease-in mt-10 ml-61 sm:ml-92" onClick={() => {setShowConfirmPassword(!showConfirmPassword)}}>
                                 {showConfirmPassword ? 
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fillRule="currentColor" className="size-5">
                                 <path d="M3.53 2.47a.75.75 0 0 0-1.06 1.06l18 18a.75.75 0 1 0 1.06-1.06l-18-18ZM22.676 12.553a11.249 11.249 0 0 1-2.631 4.31l-3.099-3.099a5.25 5.25 0 0 0-6.71-6.71L7.759 4.577a11.217 11.217 0 0 1 4.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113Z" />
