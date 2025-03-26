@@ -23,7 +23,7 @@ const EditarPerfil = () => {
     return ( 
         <>
          <AdminNav/>
-            <div className="flex items-center flex-col gap-4">
+            <div className="flex items-center flex-col gap-4 mx-5 md:mx-0">
                 {msg &&
                     <Alerta
                     alerta={alerta}

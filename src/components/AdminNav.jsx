@@ -10,7 +10,7 @@ const AdminNav = () => {
     const cambiarPasswordPath = '/admin/perfil/cambiar-password'
 
     return ( 
-        <nav className='rounded-full border-1 border-neutral-200 p-1 flex justify-between items-center text-neutral-500 mb-5 text-sm w-full sm:w-90 mx-auto'>
+        <nav className='rounded-full border-1 border-neutral-200 p-1 flex justify-between items-center text-neutral-500 mb-5 text-sm w-full sm:w-90 md:mx-auto'>
             <Link 
                 to={perfilPath}
                 className={`${perfilPath == path && 'bg-blue rounded-full text-white'} px-4 py-1`}

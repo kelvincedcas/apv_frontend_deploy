@@ -120,7 +120,7 @@ const CambiarPassword = () => {
     return (
         <>
          <AdminNav/>
-         <div className="flex items-center flex-col gap-4">
+         <div className="flex items-center flex-col gap-4 mx-5 md:mx-0">
                 {msg &&
                     <Alerta
                     alerta={alerta}
@@ -143,7 +143,7 @@ const CambiarPassword = () => {
                                     id="pwdActual"
                                     name= "pwd_actual"
                                     type={showPasswordActual ? "text" : "password"}
-                                    placeholder="Ingresa tu contraseña" 
+                                    placeholder="Ingresa tu contraseña actual" 
                                     className="outline-primary focus:outline-blue bg-primary p-4 rounded-lg transition duration-100 ease-in outline-2 w-full"
                                     required
                                     pattern=".{8,}"
@@ -178,7 +178,7 @@ const CambiarPassword = () => {
                                     id="passwordNuevo"
                                     name="pwd_nuevo"
                                     type={showPasswordNuevo ? "text" : "password"}
-                                    placeholder="Ingresa tu contraseña" className=" bg-primary p-4 rounded-lg transition duration-100 ease-in outline-2 outline-primary  focus:outline-blue w-full"
+                                    placeholder="Ingresa tu contraseña nueva" className=" bg-primary p-4 rounded-lg transition duration-100 ease-in outline-2 outline-primary  focus:outline-blue w-full"
                                     required
                                     pattern=".{8,}"
                                     onFocus={() => {
@@ -281,7 +281,7 @@ const CambiarPassword = () => {
                                 <input 
                                     id="confirmar-password"
                                     type={showConfirmPassword ? "text" : "password"}
-                                    placeholder="Ingresa tu contraseña" 
+                                    placeholder="Confirma tu contraseña nueva" 
                                     className={`${passwordsIguales ? 'outline-primary focus:outline-blue' : 'outline-red-500 focus:outline-red-500'} bg-primary p-4 rounded-lg transition duration-100 ease-in outline-2 w-full`}
                                     required
                                     pattern=".{8,}"

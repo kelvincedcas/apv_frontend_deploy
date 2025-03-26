@@ -18,7 +18,7 @@ const Perfil = () => {
     return ( 
         <>
          <AdminNav/>
-            <section className="border-1 border-neutral-200 w-full flex flex-col mx-auto mt-15 rounded-3xl p-10">
+            <section className="border-1 border-neutral-200 md:w-full flex flex-col mt-15 rounded-3xl p-10 mx-5 md:mx-0">
                 <header className="text-center">
                     <div className="w-30 h-30 overflow-hidden mx-auto rounded-2xl bg-white -mt-20">
                         <img src="../images/perfil.png" alt="imagen-perfil"

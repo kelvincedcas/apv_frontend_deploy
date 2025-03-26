@@ -16,7 +16,7 @@ body{
 .loader {
   width: 28px;
   height: 28px;
-  border: 4px dotted #ffffff;
+  border: 3px dotted #ffffff;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -36,7 +36,7 @@ body{
 .loader-black {
   width: 35px;
   height: 35px;
-  border: 4px dotted #5a5a5a;
+  border: 3px dotted #5a5a5a;
   border-radius: 50%;
   display: inline-block;
   position: relative;

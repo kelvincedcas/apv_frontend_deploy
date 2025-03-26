@@ -10,7 +10,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [alerta, setAlerta] = useState({});
-    const [spinnerFlag, setSpinnerFlag] = useState(false);
+    const [spinnerFlag, setSpinnerFlag] = useState(true);
 
     const navigate = useNavigate();
 
