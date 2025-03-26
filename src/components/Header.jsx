@@ -47,7 +47,7 @@ const Header = () => {
                         }}
                     >
                         <div className="w-7 h-7 rounded-full overflow-hidden border-2 border-blue">
-                            <img src="../images/perfil.svg" alt="imagen-perfil"/>
+                            <img src="../images/perfil.png" alt="imagen-perfil"/>
                         </div>
                         <div className="flex items-center gap-2">
                             <p className="text-neutral-600">{auth.nombres || " "} {auth.apellidos || " "}</p>

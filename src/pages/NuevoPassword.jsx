@@ -151,7 +151,7 @@ const NuevoPassword = () => {
                 <img src="../images/forgot-password.svg" alt="img-doctor" className="hidden lg:block h-80"/>
             </div>
             <div className="m-auto w-97 sm:w-lg duration-200 ease-in">
-                <div className="bg-white p-10 rounded-4xl text-neutral-600 flex flex-col gap-3 border-2 border-neutral-100 mb-14 md:mb-0 min-h-105 duration-200 ease-in justify-center">
+                <div className="bg-white p-10 rounded-4xl text-neutral-600 flex flex-col gap-3 border-2 border-neutral-100 mb-14 md:mb-0 min-h-105 duration-200 ease-in justify-center mx-2">
                     {alertaFlag && 
                     <div className="mb-2 flex flex-col gap-4">
                         <Alerta 
